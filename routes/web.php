@@ -26,10 +26,3 @@ Route::get('/registro', 'registroController@index')->name('registro');
 Route::get('/ventas', 'ventasController@index')->name('ventas');
 
 
-//Recursos
-Route::get('/clientes/all', 'ClienteManagerController@index')->name('clientes_all');
-Route::get('/clientes/save/{id}', 'ClienteManagerController@store')->name('clientes_save');
-Route::get('/clientes/edit/{id}', 'ClienteManagerController@edit')->name('clientes_edit');
-Route::get('/clientes/update/{id}', 'ClienteManagerController@update')->name('clientes_update');
-Route::get('/clientes/delete/{id}', 'ClienteManagerController@destroy')->name('clientes_destroy');
-
